@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Facebook",
+    "titlePrefix": "Facebook",
+    "url": "https://www.facebook.com/rizkiramadhan89",
+    "description": "Like my Facebook page to stay connected and get the latest updates.",
+    "icon_url": "https://www.google.com/s2/favicons?domain=facebook.com&sz=48"
+  },
+  {
+    "id": 2,
+    "title": "LinkedIn",
+    "titlePrefix": "LinkedIn",
+    "url": "https://www.linkedin.com/in/achmadrizkirmdhn/",
+    "description": "Connect with me on LinkedIn for professional networking and career updates.",
+    "icon_url": "https://www.google.com/s2/favicons?domain=linkedin.com&sz=48"
+  },
+  {
+    "id": 3,
+    "title": "Instagram",
+    "titlePrefix": "Instagram",
+    "url": "https://www.instagram.com/riz.rmdhnn/",
+    "description": "Connect with me on Instagram for personal updates and sharing my life.",
+    "icon_url": "https://www.google.com/s2/favicons?domain=instagram.com&sz=48"
+  },
+  {
+    "id": 4,
+    "title": "GitHub",
+    "titlePrefix": "GitHub",
+    "url": "https://github.com/rizkirmdhnnn/",
+    "description": "Check out my open source projects and contributions on GitHub.",
+    "icon_url": "https://www.google.com/s2/favicons?domain=github.com&sz=48"
+  },
+  {
+    "id": 5,
+    "title": "Personal Website",
+    "titlePrefix": "Personal",
+    "titleSuffix": ".Website()",
+    "url": "https://txtfromrizkirmdhn.my.id",
+    "description": "My personal website where I share my thoughts and projects.",
+    "icon_url": "https://www.google.com/s2/favicons?domain=txtfromrizkirmdhn.my&sz=48"
+  },
+  {
+    "id": 6,
+    "title": "Bento Tools",
+    "titlePrefix": "Bento",
+    "titleSuffix": ".Tools()",
+    "url": "https://bento.txtfromrizkirmdhn.my.id",
+    "description": "All in one tools for your PDF files.",
+    "icon_url": "https://www.google.com/s2/favicons?domain=bentopdf.com/&sz=48"
+  }
+]
