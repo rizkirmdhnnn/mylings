@@ -1,5 +1,6 @@
 services:
   mylings:
+    container_name: mylings
     build:
       context: .
       dockerfile: Dockerfile
