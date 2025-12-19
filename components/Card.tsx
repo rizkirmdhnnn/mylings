@@ -7,8 +7,6 @@ type CardProps = {
   titleSuffix?: string;
   description?: string;
   url: string;
-  iconUrl?: string;
-  /** Optional index to stagger animations (e.g. with AOS) */
   index?: number;
 };
 
@@ -18,7 +16,6 @@ export default function Card({
   titleSuffix,
   description,
   url,
-  iconUrl,
   index,
 }: CardProps) {
   const safeTitlePrefix = titlePrefix ?? title;
