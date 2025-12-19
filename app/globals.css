@@ -7,22 +7,32 @@
 }
 
 @theme inline {
-  /* Map Tailwind semantic colors to the palette from index.html */
+  /* VSCode Dark+ Theme with Golang-specific colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-primary: #38bdf8;
+  /* Primary accent - Go blue (#00add8) with VSCode compatibility */
+  --color-primary: #00add8;
+  
+  /* Background colors - VSCode Dark+ */
   --color-background-dark: #1e1e1e;
-  --color-background-light: #f0f2f5;
-  --color-surface-dark: #2a2a2a;
-  --color-border-dark: #3c3c3c;
-  --color-text-light: #e0e0e0;
-  --color-text-muted: #8f8f8f;
-  --color-code-comment: #6a9955;
-  --color-code-keyword: #569cd6;
-  --color-code-string: #ce9178;
-  --color-code-variable: #9cdcfe;
-  --color-code-tag: #d7ba7d;
+  --color-background-light: #252526;
+  --color-surface-dark: #252526;
+  --color-border-dark: #3e3e42;
+  
+  /* Text colors */
+  --color-text-light: #d4d4d4;
+  --color-text-muted: #858585;
+  
+  /* Golang syntax highlighting colors (VSCode Dark+ theme) */
+  --color-code-comment: #6a9955; /* Green for comments */
+  --color-code-keyword: #569cd6; /* Blue for keywords (func, var, const, etc.) */
+  --color-code-string: #ce9178; /* Peach for strings */
+  --color-code-variable: #9cdcfe; /* Light blue for variables */
+  --color-code-function: #dcdcaa; /* Yellow for functions */
+  --color-code-type: #4ec9b0; /* Cyan for types (int, string, etc.) */
+  --color-code-tag: #d7ba7d; /* Gold for tags/operators */
+  --color-code-number: #b5cea8; /* Light green for numbers */
 
   /* Typography */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -44,10 +54,10 @@ body {
   font-family: var(--font-mono);
 }
 
-/* Selection colors (match index.html body classes) */
+/* Selection colors - VSCode style */
 ::selection {
-  background: #38bdf8;
-  color: #1e1e1e;
+  background: #264f78;
+  color: #d4d4d4;
 }
 
 /* Thin dark scrollbar similar to index.html */

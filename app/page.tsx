@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import Card from "../components/Card";
 import links from "../links.json";
@@ -58,6 +59,21 @@ export default function Home() {
                 <br />
                 Sharing useful resources and projects
               </p>
+              <motion.div
+                className="mt-6"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.3 }}
+              >
+                <Link
+                  href="/portfolio"
+                  className="text-text-muted hover:text-primary transition-colors text-sm inline-flex items-center gap-2 border border-border-dark hover:border-primary/50 px-4 py-2 rounded bg-surface-dark/50 hover:bg-surface-dark"
+                >
+                  <span className="text-code-keyword">view</span>
+                  <span className="text-code-variable">portfolio</span>
+                  <span className="text-text-muted">→</span>
+                </Link>
+              </motion.div>
             </div>
           </div>
         </header>
