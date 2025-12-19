@@ -52,7 +52,9 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                Backend Developer • Homelab Enthusiast • Runner
+                <span className="bg-primary text-black inline-block">
+                  Backend Developer • Homelab Enthusiast • Runner
+                </span>
                 <br />
                 Sharing useful resources and projects
               </p>
