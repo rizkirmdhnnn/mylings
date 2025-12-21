@@ -1,0 +1,62 @@
+# Getting Started with Golang
+
+Welcome to my first blog post! Today, I want to share my experience learning Go and building scalable backend systems.
+
+## Why Golang?
+
+Golang, or Go, has become one of my favorite programming languages for backend development. Here's why:
+
+- **Simplicity**: Go has a clean and simple syntax that's easy to learn
+- **Performance**: Compiled language with excellent performance
+- **Concurrency**: Built-in support for goroutines and channels
+- **Great tooling**: Excellent standard library and tooling
+
+## My First Go Program
+
+Here's a simple "Hello, World!" program in Go:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+
+## Building REST APIs
+
+Go is excellent for building REST APIs. Here's a simple example using the standard library:
+
+```go
+package main
+
+import (
+    "encoding/json"
+    "net/http"
+)
+
+type User struct {
+    ID   int    `json:"id"`
+    Name string `json:"name"`
+}
+
+func main() {
+    http.HandleFunc("/users", func(w http.ResponseWriter, r *http.Request) {
+        users := []User{
+            {ID: 1, Name: "John"},
+            {ID: 2, Name: "Jane"},
+        }
+        json.NewEncoder(w).Encode(users)
+    })
+
+    http.ListenAndServe(":8080", nil)
+}
+```
+
+## Conclusion
+
+Go has been a game-changer for my backend development. The simplicity and performance make it perfect for building scalable systems.
+
+Thanks for reading! Stay tuned for more posts about my experiences with Go and other technologies.

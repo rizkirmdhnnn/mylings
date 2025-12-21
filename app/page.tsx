@@ -60,7 +60,7 @@ export default function Home() {
                 Sharing useful resources and projects
               </p>
               <motion.div
-                className="mt-6"
+                className="mt-6 flex gap-3 flex-wrap justify-center"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.3 }}
@@ -71,6 +71,14 @@ export default function Home() {
                 >
                   <span className="text-code-keyword">view</span>
                   <span className="text-code-variable">portfolio</span>
+                  <span className="text-text-muted">→</span>
+                </Link>
+                <Link
+                  href="/blog"
+                  className="text-text-muted hover:text-primary transition-colors text-sm inline-flex items-center gap-2 border border-border-dark hover:border-primary/50 px-4 py-2 rounded bg-surface-dark/50 hover:bg-surface-dark"
+                >
+                  <span className="text-code-keyword">read</span>
+                  <span className="text-code-variable">blog</span>
                   <span className="text-text-muted">→</span>
                 </Link>
               </motion.div>

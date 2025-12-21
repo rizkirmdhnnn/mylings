@@ -56,6 +56,14 @@ export default function FooterSection() {
                   <span className="text-code-keyword">→</span> Skills
                 </a>
               </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-text-muted hover:text-primary transition-colors text-xs sm:text-sm inline-flex items-center gap-1"
+                >
+                  <span className="text-code-keyword">→</span> Blog
+                </Link>
+              </li>
             </ul>
           </div>
 

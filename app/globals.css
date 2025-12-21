@@ -74,3 +74,16 @@ body {
 .scrollbar-thin::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+/* Touch-friendly interactions */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better code block scrolling on mobile */
+@media (max-width: 640px) {
+  pre {
+    -webkit-overflow-scrolling: touch;
+  }
+}
